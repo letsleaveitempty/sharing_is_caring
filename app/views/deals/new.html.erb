@@ -1,0 +1,17 @@
+<h1>New deal</h1>
+
+<%= form_for :deal, url: deals_path  do |d| %>
+  <p>
+    <%= d.label :title %><br>
+    <%= d.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= d.label :text %><br>
+    <%= d.text_area :text %>
+  </p>
+ 
+  <p>
+    <%= d.submit %>
+  </p>
+<% end %>

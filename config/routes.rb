@@ -4,6 +4,8 @@ Sic::Application.routes.draw do
 
   resources :users
 
+  resources :deals
+
   root to: "welcome#index"
 
 end
