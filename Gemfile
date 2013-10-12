@@ -14,6 +14,8 @@ group :production do
 end
 
 gem 'therubyracer'
+gem 'geocoder'
+gem 'gmaps4rails'
 
 
 # Gems used only for assets and not required

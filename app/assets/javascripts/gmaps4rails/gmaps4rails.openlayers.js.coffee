@@ -204,7 +204,7 @@ class @Gmaps4RailsOpenlayers extends Gmaps4Rails
   #////////////////////////////////////////////////////
 
   create_polyline : (polyline) ->
-
+	
     if(@polylinesLayer == null)
       @polylinesLayer = new OpenLayers.Layer.Vector("Polylines", null)
       @serviceObject.addLayer(@polylinesLayer)
