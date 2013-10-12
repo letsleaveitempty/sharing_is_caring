@@ -19,6 +19,7 @@ class DealsController < ApplicationController
 
   def index
     @deals = Deal.all
+    @pins = @deals.to_gmaps4rails
   end
 
 end
