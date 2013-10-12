@@ -1,4 +1,14 @@
-SharingIsCaring::Application.routes.draw do
+Sic::Application.routes.draw do
+
+  get "welcome/index"
+
+  resources :users
+
+  root to: "welcome#index"
+
+end
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -55,4 +65,3 @@ SharingIsCaring::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
-end
