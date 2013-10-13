@@ -6,6 +6,8 @@ Sic::Application.routes.draw do
 
   resources :deals
 
+  get "/book", to:'deals#book', as: :deals_book
+
   root to: "welcome#index"
 
 end

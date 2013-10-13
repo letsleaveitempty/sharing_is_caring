@@ -27,4 +27,7 @@ class DealsController < ApplicationController
     end
   end
 
+  def book
+  end
+
 end

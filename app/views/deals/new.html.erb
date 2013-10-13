@@ -1,17 +1,49 @@
-<h1>New deal</h1>
+<h1>To give away:</h1>
 
-<%= form_for :deal, url: deals_path  do |d| %>
-  <p>
-    <%= d.label :title %><br>
-    <%= d.text_field :title %>
-  </p>
- 
-  <p>
-    <%= d.label :text %><br>
-    <%= d.text_area :text %>
-  </p>
- 
-  <p>
-    <%= d.submit %>
-  </p>
-<% end %>
+<form class="form-inline" role="form">
+  <div class="form-group">
+    <label  for="exampleWhat">What?</label>
+    <input type="email" class="form-control" id="exampleWhat" placeholder="title">
+  </div>
+  <div class="form-group">
+    <label for="exampleWhere">Where?</label>
+    <input type="email" class="form-control" id="exampleWhere" placeholder="address">
+  </div>
+</form>
+
+<div>
+  <label >Where?</label>
+  <textarea class="form-control" rows="4" placeholder="additional info"></textarea>
+</div>
+
+<div style="display:inline" align="centre" style="text-align:center" >
+  <ul class="nav-tabs.nav-justified" style="margin-top:20px;margin-bottom:20px">
+    <div style="text-align:center" class="checkbox-inline">
+      <label>
+        <input type="checkbox" style="float:none" > Clothes
+      </label>
+    </div>
+    <div class="checkbox-inline">
+      <label>
+        <input type="checkbox"> Furnitures
+      </label>
+    </div>
+    <div class="checkbox-inline">
+      <label>
+        <input type="checkbox"> Plants
+      </label>
+    </div>
+    <div class="checkbox-inline">
+      <label>
+        <input type="checkbox"> Animals
+      </label>
+    </div>
+  </ul>
+</div>
+
+<div class="form-group">
+  <label for="exampleInputFile">Add nice pic!</label>
+    <input type="file" id="exampleInputFile">
+</div>
+
+<button type="button" class="btn btn-primary">Share it!</button>
