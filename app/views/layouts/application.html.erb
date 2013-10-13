@@ -2,6 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+      <title>SHARING is caring! </title>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://github.com/letsleaveitempty/sharing_is_caring/blob/master/app/assets/stylesheets/application.css">
+
+    <!-- Custom styles for this template -->
+    <link href="stylesheet.css" rel="stylesheet">
+
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+
+
+	<link rel="shortcut icon" href="https://secure.gravatar.com/avatar/876b6e79aa0d151286e1d00a07e4be5f?s=64">
+    <meta content="authenticity_token" name="csrf-param" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Sic" %></title>
@@ -40,26 +53,71 @@
 
 
 
-    <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-        <div class="span9">
+    
+	  <!-- Navbar
+      ================================================== -->
+      
+          <div class="col-lg-12">
+            <div class="page-header"><br/>
+              <h1 id="navbar">&nbsp;SHARING is caring!</h1>
+            </div>
+
+            <div class="bs-example">
+              <div class="navbar navbar-default">
+                <div class="container">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../about.html.erb">How it works?</a>
+                  </div>
+                  <div class="navbar-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+					<li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse by categories <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Books</a></li>
+                          <li><a href="#">Clothes</a></li>
+                          <li><a href="#">Furnitures</a></li>
+                          <li class="divider"></li>
+                          <li class="dropdown-header">Dropdown header</li>
+                          <li><a href="#">Plants</a></li>
+                          <li><a href="#">Animals</a></li>
+						
+						
+                        </ul>
+                      </li><li><a href="#">Map view</a></li>
+					  <li class="active"><a href="../users/index.html.erb">Have something to give away? </a></li>
+                    </ul>
+					
+                    <form class="navbar-form navbar-right">
+                      <input type="text" class="form-control col-lg-8" placeholder="Search">
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#">Login</a></li>
+                      <li class="dropdown">
+                        <a href="../users/new.html.erb" class="dropdown-toggle" data-toggle="dropdown">Sign up <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Log-in</a></li>
+                          <li><a href="#">Sign-up</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div><!-- /.nav-collapse -->
+                </div><!-- /.container -->
+              </div><!-- /.navbar --></div>
+			  <!--/NAVI BAR-->
+			  
+      
           <%= bootstrap_flash %>
           <%= yield %>
         </div>
       </div><!--/row-->
 
-      <footer>
-        <p>&copy; Company 2013</p>
+      <footer class="panel-footer">
+        <p style="margin-left:auto;margin-right:auto class="footer">&copy; Anita Jaszewska & Ewelina Robaczek @ALL WOMAN HACKATON 2013</p>
       </footer>
 
     </div> <!-- /container -->
