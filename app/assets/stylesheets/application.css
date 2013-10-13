@@ -932,9 +932,9 @@ pre code {
 .col-lg-11,
 .col-lg-12 {
   position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  min-height: 3px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 .col-xs-1,
@@ -1331,7 +1331,7 @@ pre code {
   .col-lg-9,
   .col-lg-10,
   .col-lg-11 {
-    float: left;
+    float: justify;
   }
   .col-lg-1 {
     width: 8.333333333333332%;
@@ -1779,6 +1779,8 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #bbbbbb;
 }
 
+F
+
 .form-control::-moz-placeholder {
   color: #bbbbbb;
 }
@@ -1793,7 +1795,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .form-control {
   display: block;
-  width: 100%;
+  width: 50%;
   height: 38px;
   padding: 8px 12px;
   font-size: 14px;
@@ -1833,12 +1835,15 @@ textarea.form-control {
 
 .radio,
 .checkbox {
-  display: block;
-  min-height: 20px;
-  padding-left: 20px;
+  display: inline;
+  min-height: 30px;
+  padding-left: -30px;
   margin-top: 10px;
   margin-bottom: 10px;
   vertical-align: middle;
+  margin-left:auto; 
+  margin-right:auto
+   
 }
 
 .radio label,
@@ -1853,8 +1858,7 @@ textarea.form-control {
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
-  float: left;
-  margin-left: -20px;
+  margin-left: 40px;
 }
 
 .radio + .radio,
@@ -1865,7 +1869,7 @@ textarea.form-control {
 .radio-inline,
 .checkbox-inline {
   display: inline-block;
-  padding-left: 20px;
+  padding-left: 0px;
   margin-bottom: 0;
   font-weight: normal;
   vertical-align: middle;
@@ -7380,16 +7384,161 @@ legend {
 
 .affix {
   position: fixed;
-}/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
+}
+
+/* default styles for extension "tx_sixt_pi1" */
+  .tx-sixt-pi1 H2 { margin-top: 0px; margin-bottom: 0px; }
+/* default styles for extension "tx_sxdnfaq_pi1" */
+  .tx-sxdnfaq-pi1 H2 { margin-top: 0px; margin-bottom: 0px; }
+/* default styles for extension "tx_cssstyledcontent" */
+	/* Captions */
+	DIV.csc-textpic-caption-c .csc-textpic-caption { text-align: center; }
+	DIV.csc-textpic-caption-r .csc-textpic-caption { text-align: right; }
+	DIV.csc-textpic-caption-l .csc-textpic-caption { text-align: left; }
+
+	/* Needed for noRows setting */
+	DIV.csc-textpic DIV.csc-textpic-imagecolumn { float: left; display: inline; }
+
+	/* Border just around the image */
+	DIV.csc-textpic-border DIV.csc-textpic-imagewrap .csc-textpic-image IMG, DIV.csc-textpic-border DIV.csc-textpic-single-image IMG {
+		border: 2px solid black;
+		padding: 0px 0px;
+	}
+
+	DIV.csc-textpic-imagewrap { padding: 0; }
+
+	DIV.csc-textpic IMG { border: none; }
+
+	/* DIV: This will place the images side by side */
+	DIV.csc-textpic DIV.csc-textpic-imagewrap DIV.csc-textpic-image { float: left; }
+
+	/* UL: This will place the images side by side */
+	DIV.csc-textpic DIV.csc-textpic-imagewrap UL { list-style: none; margin: 0; padding: 0; }
+	DIV.csc-textpic DIV.csc-textpic-imagewrap UL LI { float: left; margin: 0; padding: 0; }
+
+	/* DL: This will place the images side by side */
+	DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image { float: left; }
+	DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image DT { float: none; }
+	DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image DD { float: none; }
+	DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image DD IMG { border: none; } /* FE-Editing Icons */
+	DL.csc-textpic-image { margin: 0; }
+	DL.csc-textpic-image DT { margin: 0; display: inline; }
+	DL.csc-textpic-image DD { margin: 0; }
+
+	/* Clearer */
+	DIV.csc-textpic-clear { clear: both; }
+
+	/* Margins around images: */
+
+	/* Pictures on left, add margin on right */
+	DIV.csc-textpic-left DIV.csc-textpic-imagewrap .csc-textpic-image,
+	DIV.csc-textpic-intext-left-nowrap DIV.csc-textpic-imagewrap .csc-textpic-image,
+	DIV.csc-textpic-intext-left DIV.csc-textpic-imagewrap .csc-textpic-image {
+		display: inline; /* IE fix for double-margin bug */
+		margin-right: 10px;
+	}
+
+	/* Pictures on right, add margin on left */
+	DIV.csc-textpic-right DIV.csc-textpic-imagewrap .csc-textpic-image,
+	DIV.csc-textpic-intext-right-nowrap DIV.csc-textpic-imagewrap .csc-textpic-image,
+	DIV.csc-textpic-intext-right DIV.csc-textpic-imagewrap .csc-textpic-image {
+		display: inline; /* IE fix for double-margin bug */
+		margin-left: 10px;
+	}
+
+	/* Pictures centered, add margin on left */
+	DIV.csc-textpic-center DIV.csc-textpic-imagewrap .csc-textpic-image {
+		display: inline; /* IE fix for double-margin bug */
+		margin-left: 10px;
+	}
+	DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-image .csc-textpic-caption { margin: 0; }
+	DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-image IMG { margin: 0; vertical-align:bottom; }
+
+	/* Space below each image (also in-between rows) */
+	DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-image { margin-bottom: 10px; }
+	DIV.csc-textpic-equalheight DIV.csc-textpic-imagerow { margin-bottom: 10px; display: block; }
+	DIV.csc-textpic DIV.csc-textpic-imagerow { clear: both; }
+	DIV.csc-textpic DIV.csc-textpic-single-image IMG { margin-bottom: 10px; }
+
+	/* IE7 hack for margin between image rows */
+	*+html DIV.csc-textpic DIV.csc-textpic-imagerow .csc-textpic-image { margin-bottom: 0; }
+	*+html DIV.csc-textpic DIV.csc-textpic-imagerow { margin-bottom: 10px; }
+
+	/* No margins around the whole image-block */
+	DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-firstcol { margin-left: 0px !important; }
+	DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-lastcol { margin-right: 0px !important; }
+
+	/* Add margin from image-block to text (in case of "Text w/ images") */
+	DIV.csc-textpic-intext-left DIV.csc-textpic-imagewrap,
+	DIV.csc-textpic-intext-left-nowrap DIV.csc-textpic-imagewrap {
+		margin-right: 10px !important;
+	}
+	DIV.csc-textpic-intext-right DIV.csc-textpic-imagewrap,
+	DIV.csc-textpic-intext-right-nowrap DIV.csc-textpic-imagewrap {
+		margin-left: 10px !important;
+	}
+
+	/* Positioning of images: */
+
+	/* Above */
+	DIV.csc-textpic-above DIV.csc-textpic-text { clear: both; }
+
+	/* Center (above or below) */
+	DIV.csc-textpic-center { text-align: center; /* IE-hack */ }
+	DIV.csc-textpic-center DIV.csc-textpic-imagewrap { margin: 0 auto; }
+	DIV.csc-textpic-center DIV.csc-textpic-imagewrap .csc-textpic-image { text-align: left; /* Remove IE-hack */ }
+	DIV.csc-textpic-center DIV.csc-textpic-text { text-align: left; /* Remove IE-hack */ }
+
+	/* Right (above or below) */
+	DIV.csc-textpic-right DIV.csc-textpic-imagewrap { float: right; }
+	DIV.csc-textpic-right DIV.csc-textpic-text { clear: right; }
+
+	/* Left (above or below) */
+	DIV.csc-textpic-left DIV.csc-textpic-imagewrap { float: left; }
+	DIV.csc-textpic-left DIV.csc-textpic-text { clear: left; }
+
+	/* Left (in text) */
+	DIV.csc-textpic-intext-left DIV.csc-textpic-imagewrap { float: left; }
+
+	/* Right (in text) */
+	DIV.csc-textpic-intext-right DIV.csc-textpic-imagewrap { float: right; }
+
+	/* Right (in text, no wrap around) */
+	DIV.csc-textpic-intext-right-nowrap DIV.csc-textpic-imagewrap { float: right; clear: both; }
+	/* Hide from IE5-mac. Only IE-win sees this. \*/
+	* html DIV.csc-textpic-intext-right-nowrap .csc-textpic-text { height: 1%; }
+	/* End hide from IE5/mac */
+
+	/* Left (in text, no wrap around) */
+	DIV.csc-textpic-intext-left-nowrap DIV.csc-textpic-imagewrap { float: left; clear: both; }
+	/* Hide from IE5-mac. Only IE-win sees this. \*/
+	* html DIV.csc-textpic-intext-left-nowrap .csc-textpic-text,
+	* html .csc-textpic-intext-left ol,
+	* html .csc-textpic-intext-left ul { height: 1%; }
+	/* End hide from IE5/mac */
+
+	DIV.csc-textpic DIV.csc-textpic-imagerow-last { margin-bottom: 0; }
+
+	/* Browser fixes: */
+
+	/* Fix for unordered and ordered list with image "In text, left" */
+	.csc-textpic-intext-left ol, .csc-textpic-intext-left ul {padding-left: 40px; overflow: auto; }
+
+	
+
+Map Css
+============================================================================*/
+#content .panel.googleMaparea{padding: 0;}
+#content .panel .googleMaparea{margin-bottom: 30px; box-shadow:1px 1px 5px #ccc}
+#content .googleMaparea .map-with-agent{position: relative; width: 100%; height: 100%}
+#content .googleMaparea .map-with-agent h3{position: absolute ; bottom: 0; right: 23%; background: #2C2C2C; background: rgba(0,0,0,0.5); display: inline-block; color: white; padding: 10px 20px;}
+#content .googleMaparea .map-with-agent h3:after{content: "";position: absolute; bottom: 0; right: -10px; border-top:10px solid transparent;border-bottom: 10px solid transparent;border-left:10px solid #716F69; z-index: 999;}
+#content .googleMaparea .map-with-agent img{position: absolute; bottom: 0; right: 3%; z-index: 999; max-width: 240px;}
+
+#googleMap{width: 100%;height: 400px;display: block;}
+#googleMap img{max-width: none;}
+#googleMap .info-location{overflow: hidden;cursor: default;clear: both;position: relative;height: 123px;width: 250px;margin-top: -90px;padding: 0pt;background-color: rgb(57, 57, 57);border: 1px solid #2C2C2C;}
+#googleMap .info-location img{float: left;margin: 0 10px 10px 0;}
+#googleMap .info-location h4{margin-top: 0;}
+#googleMap .info-location .text{color:#FFFFFF;font-size:11px;padding:10px;}
+#googleMap .arrow-location{position: absolute; left: 45px; height: 0pt; width: 0pt; margin-left: 0pt; border-width: 10px 10px 0pt 0pt; border-color: #2C2C2C transparent transparent; border-style: solid;}
