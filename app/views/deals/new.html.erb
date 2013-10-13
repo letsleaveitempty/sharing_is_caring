@@ -1,20 +1,26 @@
+<body>
 <h1>To give away:</h1>
 
-<form class="form-inline" role="form">
+<form class="form-horizontal" role="form">
   <div class="form-group">
-    <label  for="exampleWhat">What?</label>
-    <input type="email" class="form-control" id="exampleWhat" placeholder="title">
+    <label for="inputEmail1" class="col-lg-2 control-label">What?</label>
+    <div class="col-lg-10">
+      <input type="email" class="form-control" id="inputEmail1" placeholder="title of your offer">
+    </div>
   </div>
   <div class="form-group">
-    <label for="exampleWhere">Where?</label>
-    <input type="email" class="form-control" id="exampleWhere" placeholder="address">
+    <label for="inputPassword1" class="col-lg-2 control-label">Where?</label>
+    <div class="col-lg-10">
+      <input type="email" class="form-control" id="inputPassword1" placeholder="exact address">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="description" class="col-lg-2 control-label">Description</label>
+    <div class="col-lg-10">
+      <textarea class="form-control" rows="3" id="description" placeholder="add some info"></textarea>
+    </div>
   </div>
 </form>
-
-<div>
-  <label >Where?</label>
-  <textarea class="form-control" rows="4" placeholder="additional info"></textarea>
-</div>
 
 <div style="display:inline" align="centre" style="text-align:center" >
   <ul class="nav-tabs.nav-justified" style="margin-top:20px;margin-bottom:20px">
@@ -41,9 +47,12 @@
   </ul>
 </div>
 
-<div class="form-group">
+<div class="form-group" style="float: left;">
   <label for="exampleInputFile">Add nice pic!</label>
     <input type="file" id="exampleInputFile">
 </div>
 
-<button type="button" class="btn btn-primary">Share it!</button>
+<button type="button" class="btn btn-primary btn-lg" stylet="float-right">Share it!</button>
+
+<br/><br/><br/>
+</body>
