@@ -12,6 +12,8 @@ Sic::Application.routes.draw do
 
   get "/happy", to: 'welcome#happy', as: :happy
 
+  get "/story", to: 'welcome#story', as: :story
+
   root to: "welcome#index"
 
 end

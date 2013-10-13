@@ -5,5 +5,8 @@ class WelcomeController < ApplicationController
 
   def happy
   end
+
+  def story
+  end
   
 end
