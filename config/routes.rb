@@ -8,6 +8,10 @@ Sic::Application.routes.draw do
 
   get "/book", to:'deals#book', as: :deals_book
 
+  get "/deal", to: 'deals#show', as: :deal_show
+
+  get "/happy", to: 'welcome#happy', as: :happy
+
   root to: "welcome#index"
 
 end
