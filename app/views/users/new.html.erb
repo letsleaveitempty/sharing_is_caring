@@ -1,19 +1,20 @@
 <h1>Sign up:</h1>
 
-<form class="form-inline" role="form">
-  <div class="form-group">
+
+      <div class="form-group" align="centre" >
     <label  for="exampleWhat">Username</label>
     <input type="email" class="form-control" id="exampleWhat" placeholder="your username">
   </div>
-  <div class="form-group">
+    <div class="form-group" align="centre" >
     <label for="exampleWhere">Password</label>
     <input type="password" class="form-control" id="exampleWhere" placeholder="your password here">
   </div>
-</form>
+  <label  for="intrests">I'm intrested in:</label>
 
-<label  for="intrests">I'm intrested in:</label>
 <div style="display:inline" align="centre" style="text-align:center" id="intrests">
   <ul class="nav-tabs.nav-justified" style="margin-top:20px;margin-bottom:20px">
+
+
     <div style="text-align:center" class="checkbox-inline">
       <label>
         <input type="checkbox"> Clothes
@@ -36,33 +37,41 @@
     </div>
   </ul>
     <div class="form-group">
-    <label for="exampleWhere">Tags</label>
-    <input type="password" class="form-control" id="exampleWhere" placeholder="e.g. #lamp">
+    <label for="tags">Tags</label>
+    <input type="email" class="form-control" id="tags" placeholder="e.g. #lamp">
   </div>
 </div>
 
 <label for="notification">I want to receive:</label>
-<div style="display:inline" align="centre" style="text-align:center" id="notification">
-  <ul class="nav-tabs.nav-justified" style="margin-top:20px;margin-bottom:20px">
-    <div style="text-align:center" class="checkbox-inline">
-      <label>
-        <input type="checkbox"> email notifications
-      </label>
-        <div class="form-group">
-    <label for="email"></label>
-    <input type="email" class="form-control" id="email" placeholder="your email here">
+<div id="notification">
+  <form class="form-group" role="form">
+      <div class="checkbox">
+    <label>
+      <input type="checkbox"> email notifications
+    </label>
   </div>
-    </div>
-    <div class="checkbox-inline">
-      <label>
-        <input type="checkbox"> sms notifications
-      </label>
-        <div class="form-group">
-    <label for="phone"></label>
-    <input type="password" class="form-control" id="phone" placeholder="your phone number here">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
   </div>
-    </div>
-  </ul>
-</div>
+</form>
+  <form class="form-group" role="form">
+        <div class="checkbox">
+    <label>
+      <input type="checkbox"> sms notifications
+    </label>
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputPassword2">Phone number</label>
+    <input type="email" class="form-control" id="exampleInputPassword2" placeholder="Enter your phone number">
+  </div>
+</form>
 
-<button type="button" class="btn btn-primary">Create your account!</button>
+<br/><br/>
+<br/>
+
+
+<button type="button" class="btn btn-primary" align="centre">Create your account!</button>
+
+<br/><br/>
+<br/>
