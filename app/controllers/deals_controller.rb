@@ -20,6 +20,11 @@ class DealsController < ApplicationController
   def index
     @deals = Deal.all
     @pins = @deals.to_gmaps4rails
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @deals }
+    end
   end
 
 end
